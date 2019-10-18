@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CV</title>
+	<style>
+		table {
+			border: 1px solid black;
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		td {
+			border: 1px solid black;
+		}
+
+		.center {
+			text-align: center
+		}
+
+		.header-div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: thin solid black;
+			padding: 40px;
+			border-bottom-width: 0px;
+		}
+
+		.info {
+			vertical-align: top;
+			margin-left: 8px;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header-div">
+		<div>
+			<img
+				src="data:image/jpeg;base64,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"></img>
+		</div>
+		<div style="margin-left: 10px">
+			<h1>Ammar Saif</h1>
+			<p><span><img width="25px" height="22px"
+						src="https://imageog.flaticon.com/icons/png/512/25/25694.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"></img></span><span
+					class="info">Kitarakuja 3C 125, 00420, Helsinki</span></p>
+			<p><span><img width="20px" height="20px"
+						src="https://www.netclipart.com/pp/m/169-1691792_computer-icons-email-bounce-address-letter-image-file.png"></img></span><span
+					class="info">ammarsaif@gmail.com</span></p>
+			<p><span><img width="20px" height="20px"
+						src="https://www.pinclipart.com/picdir/middle/1-15431_clipart-of-phone-handset-phone-icon-svg-png.png"></img></span><span
+					class="info">0442990900</span></p>
+		</div>
+	</div>
+
+
+	<table>
+
+		<tr>
+			<td class="center"><b>Job Experience</b></td>
+			<td>
+				<div>
+					<span><b>
+							<h4>Research Assistant, Tampere University of Technology, Finland</h4>
+						</b></span>
+					<span>
+						<a href="https://trepo.tuni.fi/bitstream/handle/123456789/23313/Saif.pdf?sequence=3&isAllowed=y"
+							target="_blank">Research Thesis</a>: Research work on the opportunities and benefits for
+						Finnish
+						garments and textile brands to relocate garments and textiles manufacturing from China to
+						Vietnam.
+					</span>
+				</div>
+				<div>
+					<span><b>
+							<h4>Merchandiser, Dynamic Sportswear Private Limited, Pakistan</h4>
+						</b></span>
+					<span>
+						Buying and sourcing of Socks. Managed buying, product development, costing, price
+						negotiation, production
+						planning, packaging development, follow-ups, quality assurance and shipments, communicate
+						with customers.
+					</span>
+				</div>
+			</td>
+		</tr>
+
+
+		<tr>
+			<td class="center"><b>Education</b></td>
+			<td>
+				<span><h4>M.Sc in Engineering(Fibre, Textile and Fashion Engineering), Tampere University of
+						Technology</h4></span>
+				
+				<span><h4>B.Sc(with Honours) Textile Sciences, Textile Institute of Pakistan</h4></span>
+			</td>
+		</tr>
+
+
+
+		<tr>
+			<td class="center"><b>Skills</b></td>
+			<td>
+				<ul>
+					<li>html</li>
+					<li>CSS</li>
+					<li>Corel Draw</li>
+					<li>Express Optimization Suite</li>
+					<li>Enterprise Dynamics</li>
+				</ul>
+			</td>
+		</tr>
+
+
+<tr>
+			<td class="center"><b>Hobbies</b></td>
+			<td border=1 bordercolor=black>
+				<table border="1">
+	<thead>
+		<tr>
+			<th>Sports</th>
+			<th>Image</th>
+
+		</tr>
+	</thead>
+<tbody>
+	<!-- Kickboxing -->
+	<tr>
+		<td class="center">
+			<b>Kickboxing</b>
+		</td>
+		<td>
+			<img width="100" src="https://mmalife.com/wp-content/uploads/2016/10/Is-Muay-Thai-or-Kickboxing-Better.jpg">
+		</td>
+	<tr>
+	<!-- Brasilian Jiu-Jitsu -->
+		<td class="center">
+			<b>Brasilian-Jiu-jitsu</b>
+		</td>
+		<td>
+			<img width="100" src="http://mjrnxewya3t1in23ybpwjw59-wpengine.netdna-ssl.com/wp-content/uploads/buchecha-marcus-almeida-roger-gracie.jpg">
+		</td>
+	</tr>
+	<!-- Krav-Maga -->
+	<tr>
+		<td class="center">
+			<b>Krav-Maga</b>
+		</td>
+		<td>
+			<img width="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzDqli7Ixwo_0CEeUQA7DSdXGANAje6-XDhlxmkx66_MKMxsX5LA&s">
+		</td>
+	</tr>
+</tbody>
+</table>
+
+</tr>
+
+	</table>
+</body>
+
+</html>
